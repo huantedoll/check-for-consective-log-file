@@ -1,5 +1,5 @@
 #!/bin/bash
-fname=$(ls -t /home/jroot/script/FORMATTED* | head -n 1)
+fname=$(ls -t /home/script/FORMATTED* | head -n 1)
 cftime=$(stat -c %Y $fname)
 crtime=$(date +%s)
       if [ $[ $crtime - $cftime ] -gt 300 ]; then
